@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="10dip">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:background="#AA999999"
+        android:padding="5dp"
+        android:text="@string/Username"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/pUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtusername"
+        android:inputType="text"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pUsername"
+        android:background="#AA999999"
+        android:padding="5dp"
+        android:text="@string/Password"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/pPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtpassword"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pPassword"
+        android:background="#AA999999"
+        android:padding="5dp"
+        android:text="@string/City"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/pCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCity"
+        android:inputType="textCapWords"
+        android:textColor="#ffffff"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/pLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pCity"
+        android:text="@string/LoginBtn"/>
+
+    <Button
+        android:id="@+id/pSignup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pLogin"
+        android:text="@string/SignupBtn"/>
+
+</RelativeLayout>
